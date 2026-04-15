@@ -6,7 +6,9 @@ An immersive, dark gaming-themed website for a group of friends who gather for L
 
 - **Homepage** - Epic hero section with particle effects, next event showcase, featured game, and recent highlights
 - **Blog** - Mission logs documenting legendary LAN party battles and memorable moments
-- **Games Library** - Filterable game collection with direct Steam links and beautiful cards
+- **Games Library** - Filterable game collection with direct Steam links and hover videos
+- **Rankings** - Tournament leaderboards and player statistics across all games
+- **Interactive Checklist** - Pre-LAN preparation tracker with progress bar
 - **Dark Gaming Aesthetic** - Deep purples, vibrant pinks/cyans, particle effects, and smooth animations
 - **Fully Responsive** - Optimized for all devices from desktop to mobile
 
@@ -42,9 +44,13 @@ united-wires-website/
 ├── index.html          # Homepage with hero section
 ├── blog.html           # Mission logs/blog posts
 ├── games.html          # Game library with filters
+├── rankings.html       # Tournament rankings & stats
+├── checklist.html      # Interactive pre-LAN checklist
 ├── styles.css          # Complete styling system
 ├── main.js             # Main JavaScript module
 ├── animations.js       # Particle system & effects
+├── game-media.js       # Video/iframe hover playback
+├── checklist.js        # Checklist state management
 └── README.md           # Documentation
 ```
 
@@ -78,10 +84,22 @@ united-wires-website/
 
 ### Games Page
 - **Smart Filters** - Click to filter by game category:
-  - 🎯 Competitive (CS2, Rocket League)
-  - 🤝 Co-op (Valheim, Deep Rock Galactic, Lethal Company)
+  - 🎯 Competitive (AoE II, CS2, UT2004)
+  - 🤝 Co-op (L4D, L4D2, Back 4 Blood, Minecraft)
   - 🎲 Casual (Among Us, Fall Guys)
+- **Hover Videos** - Game preview videos/embeds play on hover
 - **Stagger Animations** - Cards animate in sequentially
+
+### Rankings Page
+- **Game-Specific Leaderboards** - Stats for each competitive game
+- **Overall Standings** - Gold/silver/bronze medal tracking
+- **Player Statistics** - Wins, losses, K/D ratios, win rates
+
+### Checklist Page
+- **Interactive Tasks** - Check off items as you complete them
+- **Progress Tracking** - Visual progress bar shows completion percentage
+- **LocalStorage** - Your progress is saved between sessions
+- **Reset Option** - Start fresh for the next LAN
 
 ### All Pages
 - **Glow Effects** - Cards glow on hover with gradient borders
