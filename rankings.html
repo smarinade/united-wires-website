@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankings - United Wires</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="description" content="United Wires tournament rankings and game statistics - See who's dominating the LAN!">
+    <meta name="theme-color" content="#c026d3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="dark-gradient-bg"></div>
+    <canvas id="particles-bg"></canvas>
+    <div class="glow-orbs"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">UNITED WIRES</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="games.html" class="nav-link">Games</a></li>
+                <li><a href="rankings.html" class="nav-link active">Rankings</a></li>
+                <li><a href="checklist.html" class="nav-link">Checklist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">RANKINGS</h1>
+            <p class="page-subtitle">Who's dominating the LAN?</p>
+        </div>
+    </section>
+
+    <!-- Rankings -->
+    <section class="section">
+        <div class="container">
+            <!-- Age of Empires II -->
+            <div class="ranking-section">
+                <div class="ranking-header">
+                    <h2 class="ranking-title">Age of Empires II: Definitive Edition</h2>
+                    <span class="ranking-badge competitive">Strategy</span>
+                </div>
+                <div class="ranking-table">
+                    <div class="ranking-row ranking-row-header">
+                        <div class="rank-col">#</div>
+                        <div class="player-col">Player</div>
+                        <div class="stat-col">Wins</div>
+                        <div class="stat-col">Losses</div>
+                        <div class="stat-col">Win Rate</div>
+                    </div>
+                    <div class="ranking-row ranking-row-gold">
+                        <div class="rank-col">🥇</div>
+                        <div class="player-col">Jeroen De Bock</div>
+                        <div class="stat-col">12</div>
+                        <div class="stat-col">3</div>
+                        <div class="stat-col">80%</div>
+                    </div>
+                    <div class="ranking-row ranking-row-silver">
+                        <div class="rank-col">🥈</div>
+                        <div class="player-col">Sander Marin</div>
+                        <div class="stat-col">8</div>
+                        <div class="stat-col">7</div>
+                        <div class="stat-col">53%</div>
+                    </div>
+                    <div class="ranking-row ranking-row-bronze">
+                        <div class="rank-col">🥉</div>
+                        <div class="player-col">Kjell Smiths</div>
+                        <div class="stat-col">5</div>
+                        <div class="stat-col">10</div>
+                        <div class="stat-col">33%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warcraft III -->
+            <div class="ranking-section">
+                <div class="ranking-header">
+                    <h2 class="ranking-title">Warcraft III (Classic)</h2>
+                    <span class="ranking-badge competitive">Strategy</span>
+                </div>
+                <div class="ranking-table">
+                    <div class="ranking-row ranking-row-header">
+                        <div class="rank-col">#</div>
+                        <div class="player-col">Player</div>
+                        <div class="stat-col">Wins</div>
+                        <div class="stat-col">Losses</div>
+                        <div class="stat-col">Win Rate</div>
+                    </div>
+                    <div class="ranking-row ranking-row-gold">
+                        <div class="rank-col">🥇</div>
+                        <div class="player-col">Sander Marin</div>
+                        <div class="stat-col">14</div>
+                        <div class="stat-col">6</div>
+                        <div class="stat-col">70%</div>
+                    </div>
+                    <div class="ranking-row ranking-row-silver">
+                        <div class="rank-col">🥈</div>
+                        <div class="player-col">Jeroen De Bock</div>
+                        <div class="stat-col">10</div>
+                        <div class="stat-col">10</div>
+                        <div class="stat-col">50%</div>
+                    </div>
+                    <div class="ranking-row ranking-row-bronze">
+                        <div class="rank-col">🥉</div>
+                        <div class="player-col">Kjell Smiths</div>
+                        <div class="stat-col">6</div>
+                        <div class="stat-col">14</div>
+                        <div class="stat-col">30%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unreal Tournament 2004 -->
+            <div class="ranking-section">
+                <div class="ranking-header">
+                    <h2 class="ranking-title">Unreal Tournament 2004</h2>
+                    <span class="ranking-badge competitive">FPS</span>
+                </div>
+                <div class="ranking-table">
+                    <div class="ranking-row ranking-row-header">
+                        <div class="rank-col">#</div>
+                        <div class="player-col">Player</div>
+                        <div class="stat-col">Total Frags</div>
+                        <div class="stat-col">Deaths</div>
+                        <div class="stat-col">K/D Ratio</div>
+                    </div>
+                    <div class="ranking-row ranking-row-gold">
+                        <div class="rank-col">🥇</div>
+                        <div class="player-col">Kjell Smiths</div>
+                        <div class="stat-col">847</div>
+                        <div class="stat-col">412</div>
+                        <div class="stat-col">2.06</div>
+                    </div>
+                    <div class="ranking-row ranking-row-silver">
+                        <div class="rank-col">🥈</div>
+                        <div class="player-col">Sander Marin</div>
+                        <div class="stat-col">723</div>
+                        <div class="stat-col">489</div>
+                        <div class="stat-col">1.48</div>
+                    </div>
+                    <div class="ranking-row ranking-row-bronze">
+                        <div class="rank-col">🥉</div>
+                        <div class="player-col">Jeroen De Bock</div>
+                        <div class="stat-col">654</div>
+                        <div class="stat-col">521</div>
+                        <div class="stat-col">1.26</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Counter-Strike 2 -->
+            <div class="ranking-section">
+                <div class="ranking-header">
+                    <h2 class="ranking-title">Counter-Strike 2</h2>
+                    <span class="ranking-badge competitive">FPS</span>
+                </div>
+                <div class="ranking-table">
+                    <div class="ranking-row ranking-row-header">
+                        <div class="rank-col">#</div>
+                        <div class="player-col">Player</div>
+                        <div class="stat-col">Kills</div>
+                        <div class="stat-col">Deaths</div>
+                        <div class="stat-col">K/D Ratio</div>
+                    </div>
+                    <div class="ranking-row ranking-row-gold">
+                        <div class="rank-col">🥇</div>
+                        <div class="player-col">Sander Marin</div>
+                        <div class="stat-col">342</div>
+                        <div class="stat-col">278</div>
+                        <div class="stat-col">1.23</div>
+                    </div>
+                    <div class="ranking-row ranking-row-silver">
+                        <div class="rank-col">🥈</div>
+                        <div class="player-col">Kjell Smiths</div>
+                        <div class="stat-col">318</div>
+                        <div class="stat-col">289</div>
+                        <div class="stat-col">1.10</div>
+                    </div>
+                    <div class="ranking-row ranking-row-bronze">
+                        <div class="rank-col">🥉</div>
+                        <div class="player-col">Jeroen De Bock</div>
+                        <div class="stat-col">289</div>
+                        <div class="stat-col">315</div>
+                        <div class="stat-col">0.92</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Age of Mythology -->
+            <div class="ranking-section">
+                <div class="ranking-header">
+                    <h2 class="ranking-title">Age of Mythology: Retold</h2>
+                    <span class="ranking-badge competitive">Strategy</span>
+                </div>
+                <div class="ranking-table">
+                    <div class="ranking-row ranking-row-header">
+                        <div class="rank-col">#</div>
+                        <div class="player-col">Player</div>
+                        <div class="stat-col">Wins</div>
+                        <div class="stat-col">Losses</div>
+                        <div class="stat-col">Win Rate</div>
+                    </div>
+                    <div class="ranking-row ranking-row-gold">
+                        <div class="rank-col">🥇</div>
+                        <div class="player-col">Jeroen De Bock</div>
+                        <div class="stat-col">9</div>
+                        <div class="stat-col">4</div>
+                        <div class="stat-col">69%</div>
+                    </div>
+                    <div class="ranking-row ranking-row-silver">
+                        <div class="rank-col">🥈</div>
+                        <div class="player-col">Kjell Smiths</div>
+                        <div class="stat-col">7</div>
+                        <div class="stat-col">6</div>
+                        <div class="stat-col">54%</div>
+                    </div>
+                    <div class="ranking-row ranking-row-bronze">
+                        <div class="rank-col">🥉</div>
+                        <div class="player-col">Sander Marin</div>
+                        <div class="stat-col">5</div>
+                        <div class="stat-col">8</div>
+                        <div class="stat-col">38%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overall Leaderboard -->
+            <div class="ranking-section">
+                <div class="ranking-header">
+                    <h2 class="ranking-title">Overall Leaderboard</h2>
+                    <span class="ranking-badge">All Games</span>
+                </div>
+                <div class="ranking-table">
+                    <div class="ranking-row ranking-row-header">
+                        <div class="rank-col">#</div>
+                        <div class="player-col">Player</div>
+                        <div class="stat-col">🥇 Gold</div>
+                        <div class="stat-col">🥈 Silver</div>
+                        <div class="stat-col">🥉 Bronze</div>
+                        <div class="stat-col">Total Points</div>
+                    </div>
+                    <div class="ranking-row ranking-row-gold">
+                        <div class="rank-col">🥇</div>
+                        <div class="player-col">Sander Marin</div>
+                        <div class="stat-col">2</div>
+                        <div class="stat-col">2</div>
+                        <div class="stat-col">1</div>
+                        <div class="stat-col">11</div>
+                    </div>
+                    <div class="ranking-row ranking-row-silver">
+                        <div class="rank-col">🥈</div>
+                        <div class="player-col">Jeroen De Bock</div>
+                        <div class="stat-col">2</div>
+                        <div class="stat-col">1</div>
+                        <div class="stat-col">2</div>
+                        <div class="stat-col">10</div>
+                    </div>
+                    <div class="ranking-row ranking-row-bronze">
+                        <div class="rank-col">🥉</div>
+                        <div class="player-col">Kjell Smiths</div>
+                        <div class="stat-col">1</div>
+                        <div class="stat-col">2</div>
+                        <div class="stat-col">2</div>
+                        <div class="stat-col">9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚡ UNITED WIRES</div>
+                    <p class="footer-tagline">Powered by friendship, fueled by competition</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="games.html">Games</a>
+                    <a href="rankings.html">Rankings</a>
+                    <a href="checklist.html">Checklist</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 United Wires. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
