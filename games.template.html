@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library - United Wires</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="description" content="United Wires game library - Warcraft III, Age of Empires II, Counter-Strike, Minecraft and more. Get ready for the next LAN!">
+    <meta name="theme-color" content="#c026d3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="dark-gradient-bg"></div>
+    <canvas id="particles-bg"></canvas>
+    <div class="glow-orbs"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">UNITED WIRES</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="games.html" class="nav-link active">Games</a></li>
+                <li><a href="rankings.html" class="nav-link">Rankings</a></li>
+                <li><a href="checklist.html" class="nav-link">Checklist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">GAME LIBRARY</h1>
+            <p class="page-subtitle">Install these before the next session</p>
+        </div>
+    </section>
+
+    <!-- Games Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="games-filter">
+                <button class="filter-btn active" data-filter="all">All Games</button>
+                <button class="filter-btn" data-filter="competitive">Competitive</button>
+                <button class="filter-btn" data-filter="coop">Co-op</button>
+                <button class="filter-btn" data-filter="casual">Casual</button>
+            </div>
+
+            <div class="games-grid" id="gamesGrid">
+                <!-- GAMES_PLACEHOLDER -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Tips -->
+    <section class="section">
+        <div class="container">
+            <div class="info-box">
+                <h3 class="info-box-title">📦 PRE-LAN CHECKLIST</h3>
+                <p style="color: var(--text-secondary); margin-bottom: var(--spacing-md);">
+                    Make sure you're ready for uSolan 2026! We've created an interactive checklist
+                    to help you prepare for the event.
+                </p>
+                <div style="text-align: center;">
+                    <a href="checklist.html" class="btn btn-primary">
+                        View Interactive Checklist →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚡ UNITED WIRES</div>
+                    <p class="footer-tagline">Powered by friendship, fueled by competition</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="games.html">Games</a>
+                    <a href="rankings.html">Rankings</a>
+                    <a href="checklist.html">Checklist</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 United Wires. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+    <script src="game-media.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "united-wires-website",
+  "version": "1.0.0",
+  "description": "United Wires LAN Party Website",
+  "scripts": {
+    "build": "node build-games.js"
+  },
+  "keywords": ["lan-party", "gaming"],
+  "author": "United Wires",
+  "license": "MIT"
+}

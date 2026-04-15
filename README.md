@@ -43,7 +43,10 @@ An immersive, dark gaming-themed website for a group of friends who gather for L
 united-wires-website/
 ├── index.html          # Homepage with hero section
 ├── blog.html           # Mission logs/blog posts
-├── games.html          # Game library with filters
+├── games.html          # Game library (generated from config)
+├── games.template.html # Template for game page generation
+├── games-config.js     # Game library configuration
+├── build-games.js      # Build script for generating games.html
 ├── rankings.html       # Tournament rankings & stats
 ├── checklist.html      # Interactive pre-LAN checklist
 ├── styles.css          # Complete styling system
@@ -51,12 +54,23 @@ united-wires-website/
 ├── animations.js       # Particle system & effects
 ├── game-media.js       # Video/iframe hover playback
 ├── checklist.js        # Checklist state management
+├── package.json        # NPM scripts and metadata
 └── README.md           # Documentation
 ```
 
 ## 🚀 Getting Started
 
-1. **Launch the website:**
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Build the games page:**
+   ```bash
+   npm run build
+   ```
+
+3. **Launch the website:**
    ```bash
    # Using Python
    python -m http.server 8000
@@ -70,7 +84,7 @@ united-wires-website/
    # Then visit: http://localhost:8000
    ```
 
-2. **Or simply:**
+4. **Or simply:**
    - Double-click `index.html` to open in your browser
 
 ## 🎯 Interactive Elements
@@ -155,24 +169,38 @@ In `blog.html`, add inside `.blog-grid`:
 ```
 
 ### Add a Game
-In `games.html`, add inside `.games-grid`:
-```html
-<div class="game-card" data-category="competitive">
-    <div class="game-card-header">
-        <div class="game-icon">🎮</div>
-        <span class="game-category competitive">Competitive</span>
-    </div>
-    <h3 class="game-card-title">Game Name</h3>
-    <p class="game-card-description">Description...</p>
-    <div class="game-card-footer">
-        <a href="STEAM_LINK" class="btn btn-primary btn-small">Get on Steam</a>
-        <span class="game-status required">REQUIRED</span>
-    </div>
-</div>
+1. Edit `games-config.js` and add to the `games` array:
+```javascript
+{
+    id: 'game-id',
+    title: 'Game Name',
+    description: 'Game description...',
+    category: 'competitive',        // competitive, coop, or casual
+    categoryLabel: 'Strategy',      // Display label for category
+    status: 'required',             // required, recommended, or optional
+    image: 'https://image-url.jpg', // Game header image
+    video: 'YouTubeVideoID',        // YouTube video ID
+    emoji: '🎮',                    // Fallback emoji
+    button: {
+        type: 'link',               // 'link' or 'disabled'
+        text: 'Get on Steam - €19.99',
+        url: 'https://steam-url...' // Only needed if type is 'link'
+    }
+}
 ```
 
-Categories: `competitive`, `coop`, `casual`  
-Status classes: `required`, `recommended`, or leave empty for optional
+2. Run the build script:
+```bash
+npm run build
+```
+
+3. Commit the updated `games.html`:
+```bash
+git add games.html games-config.js
+git commit -m "Add new game"
+```
+
+**Note:** On GitHub, the build happens automatically via GitHub Actions when you push to main.
 
 ## 🌐 Browser Support
 
@@ -192,12 +220,23 @@ Requires JavaScript enabled for animations.
 
 ## 📝 Technical Notes
 
-- Zero external dependencies (except Google Fonts)
+- Zero runtime dependencies (except Google Fonts)
+- Build system generates static HTML from config
+- GitHub Actions automatically rebuilds on push to main
 - ES6 modules for clean JavaScript
 - CSS custom properties for easy theming
 - Semantic HTML structure
 - Accessible navigation
 - Mobile-first responsive design
+
+## 🤖 CI/CD
+
+The repository uses GitHub Actions to automatically build the games page:
+- Triggers on push to `main` branch
+- Runs `npm run build` to regenerate `games.html`
+- Commits and pushes changes if the build produces updates
+
+See `.github/workflows/build.yml` for details.
 
 ## 🎮 Credits
 
