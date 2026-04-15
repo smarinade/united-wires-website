@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Wires - LAN Party Collective</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="dark-gradient-bg"></div>
+    <canvas id="particles-bg"></canvas>
+    <div class="glow-orbs"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">UNITED WIRES</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="games.html" class="nav-link">Games</a></li>
+                <li><a href="checklist.html" class="nav-link">Checklist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge">LEGENDARY GAMING CREW</div>
+            <h1 class="hero-title">UNITED <span class="hero-title-accent">WIRES</span></h1>
+            <p class="hero-subtitle">Where friends connect, compete, and conquer together</p>
+            <div class="hero-cta">
+                <a href="games.html" class="btn btn-hero">VIEW GAME LIBRARY</a>
+                <a href="blog.html" class="btn btn-outline">READ STORIES</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Legends</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">47</div>
+                    <div class="stat-label">LAN Parties</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">∞</div>
+                    <div class="stat-label">Epic Battles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Event -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">NEXT CONNECTION</h2>
+            <div class="event-card">
+                <div class="event-date">
+                    <div class="event-month">APR</div>
+                    <div class="event-day">24</div>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">uSolan 2026</h3>
+                    <p class="event-description">
+                        The ultimate LAN party weekend! Age of Empires II tournament,
+                        Warcraft III custom maps, Minecraft building competition, and epic late-night
+                        Unreal Tournament sessions. Full weekend of non-stop gaming.
+                    </p>
+                    <div class="event-meta">
+                        <span class="event-location">📍 Rivierstraat 14, 9250 Waasmunster, Belgium</span>
+                        <span class="event-time">⏰ Thursday 17:30 - Saturday 26 April</span>
+                    </div>
+                </div>
+                <div class="event-status">
+                    <span class="status-badge pulse">CONFIRMED</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Game -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">FEATURED GAME</h2>
+            <div class="featured-game">
+                <div class="featured-game-content">
+                    <div class="game-badge">TOURNAMENT READY</div>
+                    <h3 class="game-title">Age of Empires II: Definitive Edition</h3>
+                    <p class="game-description">
+                        Classic RTS showdown incoming. Build your civilization, master economic strategies,
+                        and crush your opponents. This weekend's 4v4 tournament starts Saturday at 2 PM.
+                        May the best empire win.
+                    </p>
+                    <div class="game-actions">
+                        <a href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/"
+                           target="_blank"
+                           class="btn btn-primary">
+                            Get on Steam
+                        </a>
+                        <a href="games.html" class="btn btn-secondary">View All Games</a>
+                    </div>
+                </div>
+                <div class="featured-game-visual">
+                    <div class="game-icon">🏰</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Highlights -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">RECENT HIGHLIGHTS</h2>
+            <div class="blog-preview">
+                <article class="blog-card">
+                    <div class="blog-date">15 MAR 2026</div>
+                    <h3 class="blog-title">Winter LAN Wrap-Up: The Great TNT Incident</h3>
+                    <p class="blog-excerpt">
+                        What started as a peaceful Minecraft session turned into pure chaos when
+                        Kjell's "redstone experiment" destroyed half the base. Here's the full story...
+                    </p>
+                    <a href="blog.html" class="blog-link">Read more →</a>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-date">02 FEB 2026</div>
+                    <h3 class="blog-title">Tournament Results: The Great Civilization Wars</h3>
+                    <p class="blog-excerpt">
+                        Our Age of Empires II marathon delivered epic 2+ hour matches,
+                        surprise trebuchet strategies, and a decisive Jeroen victory. Full results inside.
+                    </p>
+                    <a href="blog.html" class="blog-link">Read more →</a>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-date">18 JAN 2026</div>
+                    <h3 class="blog-title">Throwback Thursday: The First United Wires LAN</h3>
+                    <p class="blog-excerpt">
+                        Remembering where it all started: three friends, one basement, and 14 hours
+                        of Unreal Tournament 2004. The origin story of United Wires.
+                    </p>
+                    <a href="blog.html" class="blog-link">Read more →</a>
+                </article>
+            </div>
+            <div class="text-center">
+                <a href="blog.html" class="btn btn-secondary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚡ UNITED WIRES</div>
+                    <p class="footer-tagline">Powered by friendship, fueled by competition</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="games.html">Games</a>
+                    <a href="checklist.html">Checklist</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 United Wires. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

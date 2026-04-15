@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - United Wires</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="dark-gradient-bg"></div>
+    <canvas id="particles-bg"></canvas>
+    <div class="glow-orbs"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">UNITED WIRES</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="games.html" class="nav-link">Games</a></li>
+                <li><a href="checklist.html" class="nav-link">Checklist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">MISSION LOGS</h1>
+            <p class="page-subtitle">Stories from the battlefield</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <div class="blog-post-header">
+                        <div class="blog-date">15 MAR 2026</div>
+                        <div class="blog-tags">
+                            <span class="tag">Minecraft</span>
+                            <span class="tag">Server Issues</span>
+                        </div>
+                    </div>
+                    <h2 class="blog-post-title">Winter LAN Wrap-Up: The Great TNT Incident of '26</h2>
+                    <div class="blog-post-content">
+                        <p>
+                            What started as a peaceful Saturday afternoon in our Minecraft server turned into absolute chaos
+                            at 2:47 AM. Kjell decided it was the perfect time to "test redstone mechanics" by building
+                            a massive TNT cannon aimed at... our main base.
+                        </p>
+                        <p>
+                            Thirty seconds into his test fire, the server started lagging. By the time we realized
+                            what was happening, half our base was a crater. We lost 6 hours of building progress,
+                            our entire storage system, and Jeroen's prized enchanting setup.
+                        </p>
+                        <p>
+                            After a heated debate about grief protection and an emergency pizza delivery,
+                            we implemented new rules: No TNT near the main base. No "redstone experiments" after midnight.
+                            Kjell is now permanently stationed on resource gathering duty.
+                        </p>
+                        <p>
+                            <strong>Lessons learned:</strong> Always have backups enabled. Never trust Kjell with explosives.
+                            3 AM is not the time for "testing mechanics."
+                        </p>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-header">
+                        <div class="blog-date">02 FEB 2026</div>
+                        <div class="blog-tags">
+                            <span class="tag">Tournament</span>
+                            <span class="tag">Age of Empires II</span>
+                        </div>
+                    </div>
+                    <h2 class="blog-post-title">Tournament Results: The Great Civilization Wars</h2>
+                    <div class="blog-post-content">
+                        <p>
+                            This month we ran an epic Age of Empires II marathon, and it was
+                            absolutely legendary. Three players. Best of five series. Pure strategic warfare.
+                        </p>
+                        <p>
+                            Sander dominated the early matches with aggressive Mongol rush strategies, but Jeroen's
+                            defensive Teutonic play proved to be the perfect counter in game 3. The
+                            deciding game lasted 2 hours and 47 minutes - the longest match in United Wires
+                            history.
+                        </p>
+                        <p>
+                            <strong>Memorable Moments:</strong>
+                        </p>
+                        <ul>
+                            <li>Kjell's "secret trebuchet forest" that nobody found until it was too late</li>
+                            <li>Sander accidentally deleting his own Town Center while under pressure</li>
+                            <li>The 3 AM pizza delivery that arrived mid-siege</li>
+                            <li>Jeroen's castle that survived 40 minutes of continuous assault</li>
+                        </ul>
+                        <p>
+                            <strong>Final Standings:</strong><br>
+                            🥇 Jeroen (Teutons main) - 3 wins<br>
+                            🥈 Sander (Mongols main) - 2 wins<br>
+                            🥉 Kjell (Britons main) - 0 wins (but moral victory for the trebs)
+                        </p>
+                        <p>
+                            Next month: Warcraft III tournament. Heroes, creeps, and chaos await.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-header">
+                        <div class="blog-date">18 JAN 2026</div>
+                        <div class="blog-tags">
+                            <span class="tag">Throwback</span>
+                            <span class="tag">Unreal Tournament</span>
+                        </div>
+                    </div>
+                    <h2 class="blog-post-title">Throwback Thursday: The First United Wires LAN</h2>
+                    <div class="blog-post-content">
+                        <p>
+                            Hard to believe it's been this long, but we're throwing it back to where it all started.
+                            Three friends, three computers, one basement, and a copy of Unreal Tournament 2004.
+                        </p>
+                        <p>
+                            That first session was pure chaos. None of us had played UT2004 competitively before,
+                            and it showed. Sander discovered the shock rifle combo and proceeded to dominate for
+                            six straight hours. Jeroen kept falling off Facing Worlds. Kjell found the redeemer
+                            and... well, friendly fire was definitely on.
+                        </p>
+                        <p>
+                            <strong>First Session Highlights:</strong>
+                        </p>
+                        <ul>
+                            <li>Total playtime: 14 hours straight</li>
+                            <li>Pizza boxes consumed: 4</li>
+                            <li>Energy drinks: We lost count</li>
+                            <li>Sander's instagib killstreak: 47 (still unbeaten)</li>
+                            <li>Times Kjell killed himself with the redeemer: 23</li>
+                        </ul>
+                        <p>
+                            That night, United Wires was born. We've evolved from UT2004 to strategy games,
+                            from three games to ten, but the core remains the same: three friends, epic gaming,
+                            and way too much caffeine.
+                        </p>
+                        <p>
+                            Here's to 47 more LAN parties. GG WP, boys.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-header">
+                        <div class="blog-date">05 DEC 2025</div>
+                        <div class="blog-tags">
+                            <span class="tag">Hardware</span>
+                            <span class="tag">Setup</span>
+                        </div>
+                    </div>
+                    <h2 class="blog-post-title">Cable Management Intervention: A Visual Journey</h2>
+                    <div class="blog-post-content">
+                        <p>
+                            Sander's gaming den has hosted 47 LAN parties. In that time, the cable situation
+                            has evolved from "organized chaos" to "actual fire hazard." This weekend,
+                            we staged an intervention.
+                        </p>
+                        <p>
+                            Armed with zip ties, cable sleeves, and sheer determination, we spent 3 hours
+                            untangling what can only be described as "The Nest" - a writhing mass of
+                            ethernet cables, power strips, and mystery cords that nobody remembers plugging in.
+                        </p>
+                        <p>
+                            Discoveries made during the cleanup:
+                        </p>
+                        <ul>
+                            <li>7 phone charging cables (2 micro-USB, apparently Kjell's)</li>
+                            <li>A VGA cable from 2015 (Jeroen swears he needed it)</li>
+                            <li>Kjell's missing gaming mouse (still works!)</li>
+                            <li>€23 in loose change (split three ways)</li>
+                            <li>Evidence of the pizza incident we don't talk about</li>
+                        </ul>
+                        <p>
+                            The den now looks professional. Sander's roommate walked in and didn't immediately
+                            complain about the mess. We're calling that a win.
+                        </p>
+                        <p>
+                            <em>Update: It's been 2 hours since setup for today's session. The cables are
+                            already a mess again. We tried.</em>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <div class="blog-post-header">
+                        <div class="blog-date">20 NOV 2025</div>
+                        <div class="blog-tags">
+                            <span class="tag">Co-op</span>
+                            <span class="tag">Back 4 Blood</span>
+                        </div>
+                    </div>
+                    <h2 class="blog-post-title">Back 4 Blood Nightmare: When Co-op Goes Catastrophic</h2>
+                    <div class="blog-post-content">
+                        <p>
+                            "Let's try Back 4 Blood," Jeroen said. "It'll be a nice break from
+                            competitive games," he said. "Co-op will be relaxing," he promised.
+                        </p>
+                        <p>
+                            Jeroen was spectacularly wrong.
+                        </p>
+                        <p>
+                            Our first run went smoothly. The three of us blasted through Act 1 on Recruit difficulty,
+                            built decent card decks, extracted with minimal casualties. Confidence was high.
+                            Too high.
+                        </p>
+                        <p>
+                            Run two: Nightmare difficulty. In retrospect, jumping from Recruit to Nightmare
+                            for our second-ever campaign might have been... ambitious. Here's how it went:
+                        </p>
+                        <ul>
+                            <li><strong>Minute 3:</strong> Kjell triggers a car alarm, summoning a horde</li>
+                            <li><strong>Minute 7:</strong> Sander shoots an explosive barrel, downs the entire team</li>
+                            <li><strong>Minute 12:</strong> We realize nobody brought healing cards</li>
+                            <li><strong>Minute 15:</strong> A Breaker spawns. We panic-fire everything.</li>
+                            <li><strong>Minute 16:</strong> Total party wipe. Game over.</li>
+                        </ul>
+                        <p>
+                            We stared at the defeat screen in silence for a solid minute. Then someone ordered
+                            pizza and we tried again. And failed again. And again. And again.
+                        </p>
+                        <p>
+                            Six hours and fifteen attempts later, we finally beat the first chapter. The gaming den
+                            erupted in cheers. Neighbors complained. Worth it.
+                        </p>
+                        <p>
+                            Back 4 Blood is now a permanent fixture in our rotation. We've learned to
+                            embrace the chaos.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚡ UNITED WIRES</div>
+                    <p class="footer-tagline">Powered by friendship, fueled by competition</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="games.html">Games</a>
+                    <a href="checklist.html">Checklist</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 United Wires. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

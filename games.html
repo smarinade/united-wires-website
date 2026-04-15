@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - United Wires</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="dark-gradient-bg"></div>
+    <canvas id="particles-bg"></canvas>
+    <div class="glow-orbs"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">UNITED WIRES</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="games.html" class="nav-link active">Games</a></li>
+                <li><a href="checklist.html" class="nav-link">Checklist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">GAME LIBRARY</h1>
+            <p class="page-subtitle">Install these before the next session</p>
+        </div>
+    </section>
+
+    <!-- Games Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="games-filter">
+                <button class="filter-btn active" data-filter="all">All Games</button>
+                <button class="filter-btn" data-filter="competitive">Competitive</button>
+                <button class="filter-btn" data-filter="coop">Co-op</button>
+                <button class="filter-btn" data-filter="casual">Casual</button>
+            </div>
+
+            <div class="games-grid" id="gamesGrid">
+                <!-- Competitive/Strategy Games -->
+                <div class="game-card" data-category="competitive">
+                    <div class="game-card-header">
+                        <div class="game-icon">⚔️</div>
+                        <span class="game-category competitive">Strategy</span>
+                    </div>
+                    <h3 class="game-card-title">Warcraft III: Reforged</h3>
+                    <p class="game-card-description">
+                        The legendary RTS classic. Custom maps, hero management, and epic battles that defined a generation.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://www.blizzard.com/en-us/games/warcraft-3"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Battle.net
+                        </a>
+                        <span class="game-status required">REQUIRED</span>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="competitive">
+                    <div class="game-card-header">
+                        <div class="game-icon">🏰</div>
+                        <span class="game-category competitive">Strategy</span>
+                    </div>
+                    <h3 class="game-card-title">Age of Empires II: Definitive Edition</h3>
+                    <p class="game-card-description">
+                        The ultimate medieval RTS experience. Build empires, command armies, and dominate through the ages.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Steam
+                        </a>
+                        <span class="game-status required">REQUIRED</span>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="competitive">
+                    <div class="game-card-header">
+                        <div class="game-icon">⚡</div>
+                        <span class="game-category competitive">Strategy</span>
+                    </div>
+                    <h3 class="game-card-title">Age of Mythology: Retold</h3>
+                    <p class="game-card-description">
+                        Gods, myths, and monsters collide. The classic mythology RTS reborn with modern graphics and gameplay.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://store.steampowered.com/app/1934680/Age_of_Mythology_Retold/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Steam
+                        </a>
+                        <span class="game-status required">REQUIRED</span>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="competitive">
+                    <div class="game-card-header">
+                        <div class="game-icon">🔫</div>
+                        <span class="game-category competitive">FPS</span>
+                    </div>
+                    <h3 class="game-card-title">Unreal Tournament 2004</h3>
+                    <p class="game-card-description">
+                        Fast-paced arena shooter perfection. Instagib, capture the flag, and legendary fragfests await.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://store.steampowered.com/app/13230/Unreal_Tournament_2004/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Steam
+                        </a>
+                        <span class="game-status required">REQUIRED</span>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="competitive">
+                    <div class="game-card-header">
+                        <div class="game-icon">🎯</div>
+                        <span class="game-category competitive">FPS</span>
+                    </div>
+                    <h3 class="game-card-title">Counter-Strike 2</h3>
+                    <p class="game-card-description">
+                        The definitive tactical shooter. Precision aim, strategic plays, and endless competitive depth.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://store.steampowered.com/app/730/CounterStrike_2/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Steam
+                        </a>
+                        <span class="game-status required">REQUIRED</span>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="competitive">
+                    <div class="game-card-header">
+                        <div class="game-icon">🏆</div>
+                        <span class="game-category competitive">Battle Royale</span>
+                    </div>
+                    <h3 class="game-card-title">Fortnite</h3>
+                    <p class="game-card-description">
+                        Build, battle, and be the last one standing. The ultimate battle royale with creative possibilities.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://www.fortnite.com/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Download Free
+                        </a>
+                        <span class="game-status recommended">RECOMMENDED</span>
+                    </div>
+                </div>
+
+                <!-- Co-op Games -->
+                <div class="game-card" data-category="coop">
+                    <div class="game-card-header">
+                        <div class="game-icon">🧟</div>
+                        <span class="game-category coop">Co-op</span>
+                    </div>
+                    <h3 class="game-card-title">Back 4 Blood</h3>
+                    <p class="game-card-description">
+                        Team up and blast through hordes of the infected. Card-based progression meets frantic zombie slaying.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://store.steampowered.com/app/924970/Back_4_Blood/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Steam
+                        </a>
+                        <span class="game-status recommended">RECOMMENDED</span>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="coop">
+                    <div class="game-card-header">
+                        <div class="game-icon">⛏️</div>
+                        <span class="game-category coop">Sandbox</span>
+                    </div>
+                    <h3 class="game-card-title">Minecraft</h3>
+                    <p class="game-card-description">
+                        Mine, craft, build, and survive together. Endless creativity meets exploration and adventure.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://www.minecraft.net/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get Minecraft
+                        </a>
+                        <span class="game-status required">REQUIRED</span>
+                    </div>
+                </div>
+
+                <!-- Casual Games -->
+                <div class="game-card" data-category="casual">
+                    <div class="game-card-header">
+                        <div class="game-icon">🎯</div>
+                        <span class="game-category casual">Party</span>
+                    </div>
+                    <h3 class="game-card-title">Fall Guys</h3>
+                    <p class="game-card-description">
+                        Chaotic obstacle course mayhem. Stumble, jump, and grab your way to victory in this colorful battle royale.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://store.steampowered.com/app/1097150/Fall_Guys/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Steam
+                        </a>
+                        <span class="game-status recommended">RECOMMENDED</span>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="casual">
+                    <div class="game-card-header">
+                        <div class="game-icon">🎲</div>
+                        <span class="game-category casual">Social</span>
+                    </div>
+                    <h3 class="game-card-title">Among Us</h3>
+                    <p class="game-card-description">
+                        Social deduction at its finest. Find the impostors before they eliminate the crew. Trust no one.
+                    </p>
+                    <div class="game-card-footer">
+                        <a href="https://store.steampowered.com/app/945360/Among_Us/"
+                           target="_blank"
+                           class="btn btn-primary btn-small">
+                            Get on Steam
+                        </a>
+                        <span class="game-status recommended">RECOMMENDED</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Tips -->
+    <section class="section">
+        <div class="container">
+            <div class="info-box">
+                <h3 class="info-box-title">📦 PRE-LAN CHECKLIST</h3>
+                <p style="color: var(--text-secondary); margin-bottom: var(--spacing-md);">
+                    Make sure you're ready for uSolan 2026! We've created an interactive checklist
+                    to help you prepare for the event.
+                </p>
+                <div style="text-align: center;">
+                    <a href="checklist.html" class="btn btn-primary">
+                        View Interactive Checklist →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚡ UNITED WIRES</div>
+                    <p class="footer-tagline">Powered by friendship, fueled by competition</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="games.html">Games</a>
+                    <a href="checklist.html">Checklist</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 United Wires. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

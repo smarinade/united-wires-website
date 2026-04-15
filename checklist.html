@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-LAN Checklist - United Wires</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="dark-gradient-bg"></div>
+    <canvas id="particles-bg"></canvas>
+    <div class="glow-orbs"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">UNITED WIRES</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="games.html" class="nav-link">Games</a></li>
+                <li><a href="checklist.html" class="nav-link active">Checklist</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">PRE-LAN CHECKLIST</h1>
+            <p class="page-subtitle">Get ready for uSolan 2026 - April 24-26</p>
+        </div>
+    </section>
+
+    <!-- Checklist Section -->
+    <section class="section">
+        <div class="container">
+            <div class="checklist-container">
+                <div class="checklist-header">
+                    <div class="checklist-progress">
+                        <div class="progress-text">
+                            <span id="progress-count">0</span> of <span id="progress-total">0</span> completed
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary btn-small" id="reset-btn">Reset All</button>
+                </div>
+
+                <div class="checklist-section">
+                    <h2 class="checklist-section-title">🎮 REQUIRED GAMES</h2>
+                    <div class="checklist-items">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="wc3">
+                            <span class="checklist-label">Install Warcraft III: Reforged</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="aoe2">
+                            <span class="checklist-label">Install Age of Empires II: Definitive Edition</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="aom">
+                            <span class="checklist-label">Install Age of Mythology: Retold</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="ut2004">
+                            <span class="checklist-label">Install Unreal Tournament 2004</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="cs2">
+                            <span class="checklist-label">Install Counter-Strike 2</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="minecraft">
+                            <span class="checklist-label">Install Minecraft</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checklist-section">
+                    <h2 class="checklist-section-title">⚙️ GAME SETUP</h2>
+                    <div class="checklist-items">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="run-once">
+                            <span class="checklist-label">Run Warcraft III and AoE II at least once to complete setup</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="verify">
+                            <span class="checklist-label">Verify game files in Steam to avoid day-of issues</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="updates">
+                            <span class="checklist-label">Download all game updates on your home internet</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checklist-section">
+                    <h2 class="checklist-section-title">🖥️ HARDWARE & DRIVERS</h2>
+                    <div class="checklist-items">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="drivers">
+                            <span class="checklist-label">Update graphics drivers (seriously, don't be that person)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="ethernet">
+                            <span class="checklist-label">Bring your own ethernet cable (Category 6 or better)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="peripherals">
+                            <span class="checklist-label">Pack mouse, keyboard, headset, and chargers</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checklist-section">
+                    <h2 class="checklist-section-title">🎧 COMMUNICATION</h2>
+                    <div class="checklist-items">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="discord">
+                            <span class="checklist-label">Join the United Wires Discord for last-minute coordination</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="mic-test">
+                            <span class="checklist-label">Test your mic in Discord before arriving</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checklist-section">
+                    <h2 class="checklist-section-title">📦 EXTRAS</h2>
+                    <div class="checklist-items">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="snacks">
+                            <span class="checklist-label">Bring snacks and drinks</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="backup">
+                            <span class="checklist-label">Backup important files (just in case)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-checkbox" data-item="sleep">
+                            <span class="checklist-label">Get a good night's sleep before the event</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="checklist-complete" id="checklist-complete" style="display: none;">
+                    <div class="complete-icon">✅</div>
+                    <h2 class="complete-title">YOU'RE READY!</h2>
+                    <p class="complete-message">All set for uSolan 2026. See you at Rivierstraat 14! 🎮⚡</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">⚡ UNITED WIRES</div>
+                    <p class="footer-tagline">Powered by friendship, fueled by competition</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="games.html">Games</a>
+                    <a href="checklist.html">Checklist</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 United Wires. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="checklist.js"></script>
+</body>
+</html>
