@@ -1361,6 +1361,13 @@ body {
     color: var(--text-secondary);
 }
 
+/* Disabled button state */
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-title {
